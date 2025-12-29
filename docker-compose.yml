@@ -1,0 +1,9 @@
+services:
+  lamasay:
+    build: .
+    container_name: lamasay
+    volumes:
+      - .:/app
+    environment:
+      - TERM=xterm-256color
+    command: ["--alpaca", "happy", "--color", "green", "Hello from Docker! 🐳"]
